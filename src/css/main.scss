@@ -1,0 +1,13 @@
+body {
+   background: #1976D2;
+}
+
+h1 {
+   color: #757575;
+
+   &:hover {
+      background: #FFFFFF;
+      cursor: pointer;
+      border: 1px solid #BDBDBD;
+   }
+}
