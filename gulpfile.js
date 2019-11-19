@@ -19,7 +19,7 @@ const sass = require("gulp-sass");
 const imagemin = require("gulp-imagemin");
 
 //Порядок подключения файлов со стилями
-const styleFiles = ["./src/css/main.scss", "./src/css/media.scss"];
+const styleFiles = ["./src/css/main.scss"];
 //Порядок подключения js файлов
 const scriptFiles = ["./src/js/lib.js", "./src/js/main.js"];
 
