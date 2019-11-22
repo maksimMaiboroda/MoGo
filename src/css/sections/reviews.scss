@@ -1,0 +1,85 @@
+/* reviews */
+
+.reviews {
+    padding: 0 110px;
+    position: relative;
+}
+
+
+.reviews__item {
+    position: relative;
+    padding-left: 205px;
+}
+
+
+.section--gray {
+    background-color: #f8f8f8;
+}
+
+
+.reviews__text {
+    font-style: italic;
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.reviews__photo {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border: 3px solid #95e1d3;
+    padding: 40px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.reviews__autor {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333;
+}
+
+.reviews__autor::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+}
+
+.reviews__btn {
+    font-size: 0;
+    color: transparent;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.reviews__btn:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+
+
+}
+
+.reviews__btn--prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.reviews__btn--next {
+    right: 0;
+    transform: rotate(135deg);
+}
