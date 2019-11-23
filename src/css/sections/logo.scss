@@ -1,0 +1,14 @@
+.logo {
+    background-color: #f8f8f8;
+}
+
+.logo__inner {
+    display: flex;
+    justify-content: space-between;
+    min-height: 250px;
+    align-items: center;
+}
+
+.logo__item {
+    width: 16.66666%;
+}
