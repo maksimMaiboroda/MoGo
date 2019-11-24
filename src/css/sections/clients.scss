@@ -1,0 +1,59 @@
+/*  section--devices  */
+
+.section--client {
+    background: url(/build/img/clients/image-bg.jpg) center no-repeat;
+}
+
+.clients {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.clients__item {
+    width: 50%;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.client__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.client__name {
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.client__reviews {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #999;
+}
+
+.client__position {
+    color: #333;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.client__position:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin: 10px 0;
+}
+
+.client__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 40px 0 140px;
+}
