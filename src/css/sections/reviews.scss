@@ -8,7 +8,7 @@
 
 .reviews__item {
     position: relative;
-    padding-left: 205px;
+    padding-left: 255px;
 }
 
 
@@ -35,6 +35,14 @@
     padding: 40px;
     transform: translateY(-50%);
     z-index: 1;
+}
+
+.section--two {
+    .reviews__photo {
+        border: none;
+        left: -70px;
+    }
+
 }
 
 .reviews__autor {
