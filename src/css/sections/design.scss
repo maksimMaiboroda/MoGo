@@ -11,9 +11,22 @@
     position: relative;
 }
 
-.iphone-img {
+.ipad-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.devices__iphone-img {
     position: absolute;
     left: 60%;
     bottom: -84px;
     z-index: 2;
+}
+
+.iphone-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
 }

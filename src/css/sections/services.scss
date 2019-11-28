@@ -1,7 +1,9 @@
 .services {
     display: flex;
+    flex-wrap: wrap;
     border-bottom: 1px solid #e5e5e5;
     margin-bottom: 40px;
+    justify-content: space-around;
 }
 
 .services:last-child {
@@ -12,14 +14,10 @@
     margin-bottom: 0;
 }
 
-
-
-
-
 .services_item {
-    flex: 1 1 0;
+    width: 33.33333%;
     padding-left: 85px;
-    padding-right: 9px;
+    /* padding-right: 9px; */
     position: relative;
     margin-bottom: 40px;
 }
