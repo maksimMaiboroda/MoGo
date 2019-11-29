@@ -4,6 +4,7 @@
 
 .footer__inner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -108,6 +109,7 @@
 
 .footer__blogs-info {
     width: 60%;
+    padding-left: 20px;
 }
 
 .blogs-info__title {
@@ -137,6 +139,7 @@
 /* footer__col-right */
 
 .footer__instagram {
+    max-width: 270px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -144,12 +147,15 @@
 }
 
 .footer__instagram-item {
-    width: 32%;
+    width: 33%;
     margin-bottom: 2px;
+}
 
-    img {
-        display: block;
-    }
+.footer__instagram-img {
+    display: block;
+    min-width: 80px;
+    width: 100%;
+    height: auto;
 }
 
 .footer__instagram-view {
