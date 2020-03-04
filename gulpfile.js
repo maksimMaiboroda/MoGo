@@ -1,5 +1,7 @@
 //Подключаем галп
 const gulp = require("gulp");
+// Deploy
+const deploy = require('gulp-gh-pages');
 //Объединение файлов
 const concat = require("gulp-concat");
 //Добапвление префиксов
@@ -53,6 +55,15 @@ gulp.task("styles", () => {
       .pipe(gulp.dest("./build/css"))
       .pipe(browserSync.stream())
   );
+});
+
+//Deploy
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+    return gulp.src("./dist/**/*")
+        .pipe(deploy())
 });
 
 //Таск для обработки скриптов
