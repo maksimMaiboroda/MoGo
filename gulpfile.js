@@ -5,8 +5,6 @@ const deploy = require('gulp-gh-pages');
 //Объединение файлов
 const concat = require("gulp-concat");
 //Добапвление префиксов
-const autoprefixer = require("gulp-autoprefixer");
-//Оптисизация стилей
 const cleanCSS = require("gulp-clean-css");
 //Оптимизация скриптов
 const uglify = require("gulp-uglify");
@@ -18,7 +16,6 @@ const browserSync = require("browser-sync").create();
 const sourcemaps = require("gulp-sourcemaps");
 //Sass препроцессор
 const sass = require("gulp-sass");
-const imagemin = require("gulp-imagemin");
 
 //Порядок подключения файлов со стилями
 const styleFiles = ["./src/css/main.scss"];
@@ -37,13 +34,6 @@ gulp.task("styles", () => {
       .pipe(sass())
       //Объединение файлов в один
       .pipe(concat("style.css"))
-      //Добавить префиксы
-      .pipe(
-        autoprefixer({
-          browsers: ["last 2 versions"],
-          cascade: false
-        })
-      )
       //Минификация CSS
       .pipe(
         cleanCSS({
@@ -95,11 +85,7 @@ gulp.task("del", () => {
 gulp.task("img-compress", () => {
   return gulp
     .src("./src/img/**")
-    .pipe(
-      imagemin({
-        progressive: true
-      })
-    )
+    
     .pipe(gulp.dest("./build/img/"));
 });
 
